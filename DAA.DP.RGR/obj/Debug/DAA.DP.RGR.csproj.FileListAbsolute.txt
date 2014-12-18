@@ -1,0 +1,2 @@
+C:\Users\1\Documents\TP.lab4\DAA.DP.RGR\DAA.DP.RGR\bin\Debug\DAA.DP.RGR.exe.config
+C:\Users\1\Documents\2 курс 3 семестр - Шаблонное программирование\DAA.DP.RGR\DAA.DP.RGR\bin\Debug\DAA.DP.RGR.exe.config
