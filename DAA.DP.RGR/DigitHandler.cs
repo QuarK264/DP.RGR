@@ -8,9 +8,9 @@ namespace DAA.DP.RGR
 {
     class DigitHandler : Handler
     {
-        public override void HandleRequest(ConsoleKeyInfo request, List<char> correctDigits)
+        public override void HandleRequest(ConsoleKeyInfo request, List<char> correctDigits,  StringBuilder str)
         {
-            StringBuilder str = new StringBuilder();
+            
             if (correctDigits.Contains(request.KeyChar))
             {
                 str.Append(request.KeyChar);
@@ -21,12 +21,17 @@ namespace DAA.DP.RGR
             {
                 if (Successor != null)
                 {
-                    Successor.HandleRequest(request);
+                    Successor.HandleRequest(request, str);
                 }
             }
         }
 
         public override void HandleRequest(ConsoleKeyInfo request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void HandleRequest(ConsoleKeyInfo requst, StringBuilder str)
         {
             throw new NotImplementedException();
         }

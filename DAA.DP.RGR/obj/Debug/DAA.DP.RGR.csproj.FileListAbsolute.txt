@@ -4,3 +4,4 @@ C:\Users\1\Documents\2 курс 3 семестр - Шаблонное прогр
 C:\Users\1\Documents\2 курс 3 семестр - Шаблонное программирование\DAA.DP.RGR\DAA.DP.RGR\bin\Debug\DAA.DP.RGR.pdb
 C:\Users\1\Documents\2 курс 3 семестр - Шаблонное программирование\DAA.DP.RGR\DAA.DP.RGR\obj\Debug\DAA.DP.RGR.exe
 C:\Users\1\Documents\2 курс 3 семестр - Шаблонное программирование\DAA.DP.RGR\DAA.DP.RGR\obj\Debug\DAA.DP.RGR.pdb
+C:\Users\1\Documents\2 курс 3 семестр - Шаблонное программирование\DAA.DP.RGR\DAA.DP.RGR\obj\Debug\DAA.DP.RGR.csprojResolveAssemblyReference.cache
