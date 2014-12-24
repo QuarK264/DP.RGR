@@ -13,7 +13,8 @@ namespace DAA.DP.RGR
             {
                 if (RemoveLastSymbol(str))
                 {
-                    Console.Write(str.ToString());
+                    string space = new string(' ', Console.CursorLeft);
+                    Console.Write(space);
                 }
             }
             else
@@ -36,20 +37,16 @@ namespace DAA.DP.RGR
             if (IsNotEmpty(StrBuilder))
             {
                 StrBuilder.Remove(StrBuilder.Length - 1, 1);
-                StrBuilder.Append(' '); 
-                Console.WriteLine();
+
+                
                 return true;
             }
             return false;
         }
-        public static bool IsEmpty(StringBuilder StrBuilder)
-        {
-            return StrBuilder.Length == 0;
-        }
 
         public static bool IsNotEmpty(StringBuilder StrBuilder)
         {
-            return !IsEmpty(StrBuilder);
+            return StrBuilder.Length != 0;
         }
 
         public override void HandleRequest(ConsoleKeyInfo request)

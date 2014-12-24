@@ -14,8 +14,8 @@ namespace DAA.DP.RGR
             if (correctDigits.Contains(request.KeyChar))
             {
                 str.Append(request.KeyChar);
-                //Input.ClearConsoleLine();
-                Console.Write(str.ToString());
+                Console.Write(str[str.Length - 1]);
+
             }
             else
             {
@@ -25,6 +25,7 @@ namespace DAA.DP.RGR
                 }
             }
         }
+
 
         public override void HandleRequest(ConsoleKeyInfo request)
         {

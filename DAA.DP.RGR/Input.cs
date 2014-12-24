@@ -27,11 +27,7 @@ namespace DAA.DP.RGR
             }
         }
 
-        public static void ClearConsoleLine()
-        {
-            var str = new string('\b', Console.CursorLeft);
-            Console.Write(str);
-        }
+
 
         
     }
