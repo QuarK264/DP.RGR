@@ -18,11 +18,12 @@ namespace DAA.DP.RGR
             Handler enterHandler = new EnterHandler();
             digitHandler.SetSuccessor(backspaceHandler);
             backspaceHandler.SetSuccessor(enterHandler);
+            StringBuilder str = new StringBuilder();
 
             while (true)
             {
                 KeyInfo = Console.ReadKey(true);
-                digitHandler.HandleRequest(KeyInfo, CorrectDigits);
+                digitHandler.HandleRequest(KeyInfo, CorrectDigits, str);
             }
         }
 
@@ -32,6 +33,7 @@ namespace DAA.DP.RGR
             Console.Write(str);
         }
 
+<<<<<<< HEAD
         public static bool IsNotEmpty(this StringBuilder StrBuilder)
         {
             return StrBuilder.Length != 0;
@@ -47,5 +49,8 @@ namespace DAA.DP.RGR
             }
             return false;
         }
+=======
+        
+>>>>>>> origin/master
     }
 }

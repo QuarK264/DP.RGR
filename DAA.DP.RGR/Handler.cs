@@ -16,6 +16,7 @@
         }
 
         public abstract void HandleRequest(ConsoleKeyInfo request);
-        public abstract void HandleRequest(ConsoleKeyInfo request, List<char> list);
+        public abstract void HandleRequest(ConsoleKeyInfo request, List<char> list, StringBuilder str);
+        public abstract void HandleRequest(ConsoleKeyInfo requst, StringBuilder str);
     }
 }
