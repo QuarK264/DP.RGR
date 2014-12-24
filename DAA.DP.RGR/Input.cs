@@ -32,14 +32,9 @@ namespace DAA.DP.RGR
             Console.Write(str);
         }
 
-        public static bool IsEmpty( this StringBuilder StrBuilder)
-        {
-            return StrBuilder.Length == 0;
-        }
-
         public static bool IsNotEmpty(this StringBuilder StrBuilder)
         {
-            return !StrBuilder.IsEmpty();
+            return StrBuilder.Length != 0;
         }
 
         public static bool RemoveLastSymbol( this StringBuilder StrBuilder)
