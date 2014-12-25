@@ -13,7 +13,7 @@ namespace DAA.DP.RGR
             {
                 if (RemoveLastSymbol(str))
                 {
-                    string space = new string(' ', Console.CursorLeft);
+                    string space = new string('\b',Console.CursorLeft);
                     Console.Write(space);
                 }
             }
