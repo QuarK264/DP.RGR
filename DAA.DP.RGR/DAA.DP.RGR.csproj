@@ -41,11 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackspaceHandler.cs" />
-    <Compile Include="DigitHandler.cs" />
-    <Compile Include="EnterHandler.cs" />
-    <Compile Include="Handler.cs" />
-    <Compile Include="Input.cs" />
+    <Compile Include="DataTime\DTBackspaceHandler.cs" />
+    <Compile Include="DataTime\DTDigitHandler.cs" />
+    <Compile Include="DataTime\DTEnterHandler.cs" />
+    <Compile Include="DataTime\InputDataTime.cs" />
+    <Compile Include="Int32\IntBackspaceHandler.cs" />
+    <Compile Include="Int32\IntDigitHandler.cs" />
+    <Compile Include="Int32\IntEnterHandler.cs" />
+    <Compile Include="Int32\Handler.cs" />
+    <Compile Include="Int32\InputInt32.cs" />
+    <Compile Include="Int32\IntMinusHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
