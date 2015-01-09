@@ -10,7 +10,7 @@
         public override void HandleRequest(ConsoleKeyInfo request)
         {
             TooLongNumberFlag = false;
-            if (InputDataTime.StrNumber.Length <= 4)
+            if (InputDataTime.StrNumber.Length <= 4 && int.Parse(InputDataTime.StrNumber.ToString()) != 0)
             {
                 if (request.Key == ConsoleKey.Enter && DTBackspaceHandler.NumberIsNotEmpty())
                 {
