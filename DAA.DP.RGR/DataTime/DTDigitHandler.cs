@@ -7,7 +7,7 @@
     {
         public override void HandleRequest(ConsoleKeyInfo request)
         {
-            if (InputInt32.CorrectDigits.Contains(request.KeyChar))
+            if (InputInt32.CorrectDigits.Contains(request.KeyChar) && InputDataTime.StrNumber.Length <= 3)
             {
                 InputDataTime.StrNumber.Append(request.KeyChar);
                 Console.Write(request.KeyChar);

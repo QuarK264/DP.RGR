@@ -1,11 +1,8 @@
 ﻿namespace DAA.DP.RGR.DataTime
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Globalization;
+    using System.Text;
 
     public static class InputDataTime
     {
@@ -76,9 +73,9 @@
             {
                 foreach (string format in formats)
                 {
-                    if (DateTime.TryParseExact(date, format, new CultureInfo("en-US"), DateTimeStyles.None, out datetime))
+                    if (DateTime.TryParseExact(date, format, new CultureInfo("en-US", false), DateTimeStyles.None, out datetime))
                     {
-                        return DateTime.ParseExact(date, format, new CultureInfo("en-US"), DateTimeStyles.None);
+                        return DateTime.ParseExact(date, format, new CultureInfo("en-US", false), DateTimeStyles.None);
                     }
                 }
                 throw new FormatException("Дату неальзя отобразить ни в одном из доступных форматов.");
